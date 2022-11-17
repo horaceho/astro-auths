@@ -1,8 +1,8 @@
 ---
-import SimpleLayout from "../layouts/SimpleLayout.astro";
+import SimpleLayout from "@layouts/SimpleLayout.astro";
 const site = Astro.site;
 const ip = Astro.clientAddress;
-const { resource, id } = Astro.params;
+const { product, id } = Astro.params;
 ---
 
 <SimpleLayout>
@@ -12,8 +12,12 @@ const { resource, id } = Astro.params;
                 <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                     Two
                 </h2>
-                <div class="text-center">Site: { site } IP address: <span>{ ip }</span></div>
-                <div class="text-center">Resource: { resource } ID: <span>{ id }</span></div>
+                <div class="text-center">
+                    Site: {site} IP address: <span>{ip}</span>
+                </div>
+                <div class="text-center">
+                    Product: {product} ID: <span>{id}</span>
+                </div>
             </div>
         </div>
     </div>

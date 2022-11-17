@@ -1,5 +1,7 @@
 ---
 import SimpleLayout from "../layouts/SimpleLayout.astro";
+const cookie = Astro.request.headers.get('cookie');
+console.log(cookie);
 ---
 
 <SimpleLayout>
