@@ -1,0 +1,46 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<nav>
+			<div class="m-2">
+				<nav class="flex" aria-label="Breadcrumb">
+					<ol role="list" class="flex items-center space-x-2">
+						<li>
+							<div class="flex">
+								<a href="/" class="text-sm font-medium text-stone-500 hover:text-stone-700">
+									Home
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="flex items-center">
+								．
+								<a href="/one" class="ml-2 text-sm font-medium text-stone-500 hover:text-stone-700">
+									One
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="flex items-center">
+								．
+								<a href="/two" class="ml-2 text-sm font-medium text-stone-500 hover:text-stone-700">
+									Two
+								</a>
+							</div>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</nav>
+		<slot />
+	</body>
+</html>
