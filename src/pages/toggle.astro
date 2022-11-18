@@ -1,0 +1,23 @@
+---
+import SimpleLayout from "@layouts/SimpleLayout.astro";
+import LoginButton from '@components/LoginButton.vue';
+import ThemeButton from '@components/ThemeButton.vue';
+---
+
+<SimpleLayout>
+    <div class="overflow-hidden bg-gray-50 py-16 lg:py-24">
+        <div class="relative mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div class="relative">
+                <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                    Toggle
+                </h2>
+                <div class="mt-4 text-center">
+                    <LoginButton client:load />
+                </div>
+                <div class="mt-4 text-center">
+                    <ThemeButton client:load />
+                </div>
+            </div>
+        </div>
+    </div>
+</SimpleLayout>
